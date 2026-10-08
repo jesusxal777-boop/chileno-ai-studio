@@ -3,7 +3,7 @@ const state={assets:[],plan:null};const $=s=>document.querySelector(s);const ass
   const brief = $("#brief").value.trim();
   const assets = state.assets.map(a => ({name:a.name,kind:a.kind,size:a.size}));
 
-  const response = await fetch("https://TU-WORKER.workers.dev", {
+  const response = await fetch("https://chileno-ai-studio.jesusxal777.workers.dev/", {
     method: "POST",
     headers: {"Content-Type":"application/json"},
     body: JSON.stringify({
